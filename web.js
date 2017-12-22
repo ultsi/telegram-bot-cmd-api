@@ -37,7 +37,11 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(process.env.PORT, '0.0.0.0', () => {});
+app.listen(process.env.PORT, '0.0.0.0', (server) => {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('Web server started at http://%s:%s', host, port);
+});
 
 module.exports = function(bot, token) {
     app.post('/' + token, (req, res) => {
