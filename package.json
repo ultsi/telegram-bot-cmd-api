@@ -1,0 +1,31 @@
+{
+  "name": "telegram-bot-cmd-api",
+  "version": "0.1.0",
+  "description": "Simple but rich API to make creating Telegram bots easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultsi/telegram-bot-cmd-api.git"
+  },
+  "keywords": [
+    "telegram",
+    "commands",
+    "api",
+    "bot"
+  ],
+  "author": "Joonas Ulmanen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ultsi/telegram-bot-cmd-api/issues"
+  },
+  "homepage": "https://github.com/ultsi/telegram-bot-cmd-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-telegram-bot-api": "^0.30.0",
+    "when": "^3.7.8"
+  }
+}
