@@ -37,6 +37,7 @@ module.exports = function(TOKEN, BOT_MODE, APP_URL){
             polling: true // used when no HTTPS:// connection available
         };
         bot = new Bot(TOKEN, botOptions);
+        console.log('Set up a telegram bot with polling');
     } else {
         bot = new Bot(TOKEN);
 
@@ -47,6 +48,7 @@ module.exports = function(TOKEN, BOT_MODE, APP_URL){
 
         // Load web server
         require('./web.js')(bot, TOKEN);
+        console.log('Set up a telegram bot with webhook');
     }
 
     // Load rest of things
